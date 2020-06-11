@@ -1,14 +1,20 @@
 package jpabook.start;
 
-import javax.persistence.*;  //**
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * User: HolyEyE
  * Date: 13. 5. 24. Time: 오후 7:43
  */
 @Entity
-@Table(name="MEMBER")
+@Table(name = "MEMBER")
 public class Member {
+
+    public Member() {
+    }
 
     @Id
     @Column(name = "ID")
